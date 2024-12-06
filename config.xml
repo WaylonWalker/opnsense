@@ -306,13 +306,9 @@
         <enabled>1</enabled>
         <url>https://github.com/WaylonWalker/opnsense</url>
         <branch>main</branch>
-        <privkey>b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW&#xD;
-QyNTUxOQAAACC0UzxgWWw2Uo3qppmxk652WtO8V4g++nxBsOKft0Ms1QAAAJhepAAtXqQA&#xD;
-LQAAAAtzc2gtZWQyNTUxOQAAACC0UzxgWWw2Uo3qppmxk652WtO8V4g++nxBsOKft0Ms1Q&#xD;
-AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
-07xXiD76fEGw4p+3QyzVAAAAEXdheWxvbkByYXpvcmNyZXN0AQIDBA==</privkey>
+        <privkey/>
         <user>waylonwalker</user>
-        <password/>
+        <password>Wo3ftzfIg0oa2Uof</password>
       </git>
     </backup>
   </system>
@@ -632,7 +628,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
   <revision>
     <username>root@192.168.1.100</username>
     <description>/diag_backup.php made changes</description>
-    <time>1733494140.5283</time>
+    <time>1733494192.3184</time>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.9">
