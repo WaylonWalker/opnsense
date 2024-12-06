@@ -306,11 +306,13 @@
         <enabled>1</enabled>
         <url>ssh://github.com/waylonwalker/opnsense.git</url>
         <branch>main</branch>
-        <privkey>b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW&#xD;
+        <privkey>-----BEGIN OPENSSH PRIVATE KEY-----&#xD;
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW&#xD;
 QyNTUxOQAAACC0UzxgWWw2Uo3qppmxk652WtO8V4g++nxBsOKft0Ms1QAAAJhepAAtXqQA&#xD;
 LQAAAAtzc2gtZWQyNTUxOQAAACC0UzxgWWw2Uo3qppmxk652WtO8V4g++nxBsOKft0Ms1Q&#xD;
 AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
-07xXiD76fEGw4p+3QyzVAAAAEXdheWxvbkByYXpvcmNyZXN0AQIDBA==</privkey>
+07xXiD76fEGw4p+3QyzVAAAAEXdheWxvbkByYXpvcmNyZXN0AQIDBA==&#xD;
+-----END OPENSSH PRIVATE KEY-----</privkey>
         <user>waylonwalker</user>
         <password/>
       </git>
@@ -632,7 +634,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
   <revision>
     <username>root@192.168.1.100</username>
     <description>/diag_backup.php made changes</description>
-    <time>1733494357.1519</time>
+    <time>1733494376.0828</time>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.9">
