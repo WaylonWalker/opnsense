@@ -314,7 +314,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
 07xXiD76fEGw4p+3QyzVAAAAEXdheWxvbkByYXpvcmNyZXN0AQIDBA==&#xD;
 -----END OPENSSH PRIVATE KEY-----</privkey>
         <user>waylonwalker</user>
-        <password/>
+        <password>Wo3ftzfIg0oa2Uof</password>
       </git>
     </backup>
   </system>
@@ -634,7 +634,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
   <revision>
     <username>root@192.168.1.100</username>
     <description>/diag_backup.php made changes</description>
-    <time>1733494376.0828</time>
+    <time>1733494450.7123</time>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.9">
