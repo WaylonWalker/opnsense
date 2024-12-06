@@ -305,7 +305,7 @@
       <git version="1.0.0">
         <enabled>1</enabled>
         <url>https://github.com/WaylonWalker/opnsense</url>
-        <branch>master</branch>
+        <branch>main</branch>
         <privkey>-----BEGIN OPENSSH PRIVATE KEY-----&#xD;
 b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW&#xD;
 QyNTUxOQAAACC0UzxgWWw2Uo3qppmxk652WtO8V4g++nxBsOKft0Ms1QAAAJhepAAtXqQA&#xD;
@@ -635,7 +635,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
   <revision>
     <username>root@192.168.1.100</username>
     <description>/diag_backup.php made changes</description>
-    <time>1733493706.8258</time>
+    <time>1733493727.4618</time>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.9">
