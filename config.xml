@@ -633,8 +633,8 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
   </widgets>
   <revision>
     <username>root@192.168.1.100</username>
-    <description>/api/unbound/settings/toggleHostOverride/14213fd4-7002-4c32-b6a4-4dd7f1db72ce made changes</description>
-    <time>1733925873.0748</time>
+    <description>/api/unbound/settings/toggleHostOverride/01ce4b6b-4b0d-48f4-a1df-1a4fc9d17b58 made changes</description>
+    <time>1733925878.9593</time>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.9">
@@ -750,7 +750,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
       </dots>
       <hosts>
         <host uuid="01ce4b6b-4b0d-48f4-a1df-1a4fc9d17b58">
-          <enabled>0</enabled>
+          <enabled>1</enabled>
           <hostname>registry</hostname>
           <domain>wayl.one</domain>
           <rr>A</rr>
