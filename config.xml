@@ -633,8 +633,8 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
   </widgets>
   <revision>
     <username>root@192.168.1.100</username>
-    <description>/diag_backup.php made changes</description>
-    <time>1733494584.0934</time>
+    <description>/api/unbound/settings/toggleHostOverride/14213fd4-7002-4c32-b6a4-4dd7f1db72ce made changes</description>
+    <time>1733925873.0748</time>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.9">
@@ -920,7 +920,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <description>argo-workflows-direct</description>
         </host>
         <host uuid="14213fd4-7002-4c32-b6a4-4dd7f1db72ce">
-          <enabled>0</enabled>
+          <enabled>1</enabled>
           <hostname>registry-ui</hostname>
           <domain>wayl.one</domain>
           <rr>A</rr>
