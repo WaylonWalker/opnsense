@@ -633,8 +633,8 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
   </widgets>
   <revision>
     <username>root@192.168.1.100</username>
-    <description>/api/unbound/settings/toggleHostOverride/01ce4b6b-4b0d-48f4-a1df-1a4fc9d17b58 made changes</description>
-    <time>1733925878.9593</time>
+    <description>/api/unbound/settings/setHostOverride/01ce4b6b-4b0d-48f4-a1df-1a4fc9d17b58 made changes</description>
+    <time>1733925892.4342</time>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.9">
@@ -756,7 +756,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <rr>A</rr>
           <mxprio/>
           <mx/>
-          <server>192.168.1.106</server>
+          <server>192.168.1.169</server>
           <description>registry-direct</description>
         </host>
         <host uuid="6ed31b9b-7f47-4ed8-aedb-f88d37509d3a">
