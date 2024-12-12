@@ -633,8 +633,8 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
   </widgets>
   <revision>
     <username>root@192.168.1.100</username>
-    <description>/api/unbound/settings/toggleHostOverride/468b859e-4e8d-4607-ae22-fea142c6eb46 made changes</description>
-    <time>1734017817.7317</time>
+    <description>/api/unbound/settings/setHostOverride/468b859e-4e8d-4607-ae22-fea142c6eb46 made changes</description>
+    <time>1734017835.1419</time>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.9">
@@ -816,8 +816,8 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <rr>A</rr>
           <mxprio/>
           <mx/>
-          <server>192.168.1.106</server>
-          <description/>
+          <server>192.168.1.168</server>
+          <description>jellyfin-direct</description>
         </host>
         <host uuid="d599e587-443e-4e36-818f-cf90e7e2ea14">
           <enabled>0</enabled>
