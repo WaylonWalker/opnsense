@@ -633,8 +633,8 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
   </widgets>
   <revision>
     <username>root@192.168.1.100</username>
-    <description>/api/unbound/settings/toggleHostOverride/14213fd4-7002-4c32-b6a4-4dd7f1db72ce made changes</description>
-    <time>1733928375.6379</time>
+    <description>/api/unbound/settings/toggleHostOverride/468b859e-4e8d-4607-ae22-fea142c6eb46 made changes</description>
+    <time>1734017817.7317</time>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.9">
@@ -810,7 +810,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <description/>
         </host>
         <host uuid="468b859e-4e8d-4607-ae22-fea142c6eb46">
-          <enabled>0</enabled>
+          <enabled>1</enabled>
           <hostname>jellyfin</hostname>
           <domain>wayl.one</domain>
           <rr>A</rr>
