@@ -633,8 +633,8 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
   </widgets>
   <revision>
     <username>root@192.168.1.100</username>
-    <description>/api/unbound/settings/addHostOverride/ made changes</description>
-    <time>1737041742.857</time>
+    <description>/api/unbound/settings/delHostOverride/2c480372-7e0e-4c15-810c-4468ea9db67e made changes</description>
+    <time>1737041781.9426</time>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.9">
@@ -938,16 +938,6 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <mx/>
           <server>192.168.1.168</server>
           <description>speed-direct</description>
-        </host>
-        <host uuid="2c480372-7e0e-4c15-810c-4468ea9db67e">
-          <enabled>1</enabled>
-          <hostname>blippi</hostname>
-          <domain>wayl.one</domain>
-          <rr>A</rr>
-          <mxprio/>
-          <mx/>
-          <server>192.168.1.167</server>
-          <description/>
         </host>
       </hosts>
       <aliases/>
