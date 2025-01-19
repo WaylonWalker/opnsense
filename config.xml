@@ -541,7 +541,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
       </staticmap>
       <staticmap>
         <mac>6e:6c:7b:b7:cf:c1</mac>
-        <cid>wyatt-bazzite</cid>
+        <cid>wyatt-bazzite-guest</cid>
         <ipaddr>192.168.1.190</ipaddr>
         <hostname>wyatt-bazzite</hostname>
         <winsserver/>
@@ -642,7 +642,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
   </widgets>
   <revision>
     <username>root@192.168.1.100</username>
-    <time>1737330855.9359</time>
+    <time>1737331102.0554</time>
     <description>/services_dhcp_edit.php made changes</description>
   </revision>
   <OPNsense>
