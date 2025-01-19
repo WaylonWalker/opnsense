@@ -539,6 +539,15 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
         <dnsserver/>
         <ntpserver/>
       </staticmap>
+      <staticmap>
+        <mac>6e:6c:7b:b7:cf:c1</mac>
+        <cid>wyatt-bazzite</cid>
+        <ipaddr>192.168.1.190</ipaddr>
+        <hostname>wyatt-bazzite</hostname>
+        <winsserver/>
+        <dnsserver/>
+        <ntpserver/>
+      </staticmap>
     </lan>
   </dhcpd>
   <snmpd>
@@ -633,8 +642,8 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
   </widgets>
   <revision>
     <username>root@192.168.1.100</username>
-    <description>/api/unbound/settings/delHostOverride/2c480372-7e0e-4c15-810c-4468ea9db67e made changes</description>
-    <time>1737041781.9426</time>
+    <time>1737330855.9359</time>
+    <description>/services_dhcp_edit.php made changes</description>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.9">
