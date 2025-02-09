@@ -651,8 +651,8 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
   </widgets>
   <revision>
     <username>root@192.168.1.100</username>
-    <time>1737331142.8491</time>
-    <description>/services_dhcp_edit.php made changes</description>
+    <description>/api/unbound/settings/addHostOverride/ made changes</description>
+    <time>1739145147.8974</time>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.9">
@@ -956,6 +956,16 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <mx/>
           <server>192.168.1.168</server>
           <description>speed-direct</description>
+        </host>
+        <host uuid="41c4a8d7-a57b-459b-b523-1ee6299c6222">
+          <enabled>1</enabled>
+          <hostname>wwdev</hostname>
+          <domain>wayl.one</domain>
+          <rr>A</rr>
+          <mxprio/>
+          <mx/>
+          <server>192.168.1.168</server>
+          <description>wwdev-direct</description>
         </host>
       </hosts>
       <aliases/>
