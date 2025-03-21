@@ -651,8 +651,8 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
   </widgets>
   <revision>
     <username>root@192.168.1.100</username>
-    <description>/api/unbound/settings/toggleHostOverride/41c4a8d7-a57b-459b-b523-1ee6299c6222 made changes</description>
-    <time>1739153279.699</time>
+    <description>/api/unbound/settings/addHostOverride/ made changes</description>
+    <time>1742522590.4718</time>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.9">
@@ -966,6 +966,16 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <mx/>
           <server>192.168.1.168</server>
           <description>wwdev-direct</description>
+        </host>
+        <host uuid="a6f020ce-85fb-4293-81a9-34d409ca2a8e">
+          <enabled>1</enabled>
+          <hostname>omada</hostname>
+          <domain>wayl.one</domain>
+          <rr>A</rr>
+          <mxprio/>
+          <mx/>
+          <server>192.168.1.168</server>
+          <description/>
         </host>
       </hosts>
       <aliases/>
