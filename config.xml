@@ -569,6 +569,36 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
       <mode>hybrid</mode>
       <rule/>
     </outbound>
+    <rule>
+      <protocol>tcp</protocol>
+      <interface>wan</interface>
+      <category/>
+      <ipprotocol>inet</ipprotocol>
+      <descr>Kraft</descr>
+      <tag/>
+      <tagged/>
+      <poolopts/>
+      <associated-rule-id>nat_67e9f4afda5102.57135094</associated-rule-id>
+      <target>192.168.1.234</target>
+      <local-port>30565</local-port>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <network>wanip</network>
+        <port>25565</port>
+      </destination>
+      <updated>
+        <username>root@192.168.1.100</username>
+        <time>1743385775.8943</time>
+        <description>/firewall_nat_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.1.100</username>
+        <time>1743385775.8943</time>
+        <description>/firewall_nat_edit.php made changes</description>
+      </created>
+    </rule>
   </nat>
   <filter>
     <rule uuid="65efc611-3c98-47d5-961b-17367d0b9a14">
@@ -594,6 +624,27 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
       <destination>
         <any/>
       </destination>
+    </rule>
+    <rule>
+      <associated-rule-id>nat_67e9f4afda5102.57135094</associated-rule-id>
+      <source>
+        <any>1</any>
+      </source>
+      <interface>wan</interface>
+      <statetype>keep state</statetype>
+      <protocol>tcp</protocol>
+      <ipprotocol>inet</ipprotocol>
+      <destination>
+        <address>192.168.1.234</address>
+        <port>30565</port>
+      </destination>
+      <descr>Kraft</descr>
+      <category/>
+      <created>
+        <username>root@192.168.1.100</username>
+        <time>1743385775.8942</time>
+        <description>/firewall_nat_edit.php made changes</description>
+      </created>
     </rule>
   </filter>
   <rrd>
@@ -651,8 +702,8 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
   </widgets>
   <revision>
     <username>root@192.168.1.100</username>
-    <description>/api/unbound/settings/addHostOverride/ made changes</description>
-    <time>1743003017.4407</time>
+    <time>1743385775.952</time>
+    <description>/firewall_nat_edit.php made changes</description>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.9">
