@@ -284,7 +284,7 @@
     <firmware version="1.0.1">
       <mirror/>
       <flavour/>
-      <plugins>os-git-backup,os-theme-rebellion</plugins>
+      <plugins>os-git-backup,os-theme-rebellion,os-upnp</plugins>
       <type/>
       <subscription/>
       <reboot/>
@@ -659,9 +659,9 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
     <column_count>2</column_count>
   </widgets>
   <revision>
-    <username>root@192.168.1.100</username>
-    <time>1743706397.2841</time>
-    <description>/services_dhcp_edit.php made changes</description>
+    <username>(system)</username>
+    <description>/usr/local/opnsense/scripts/firmware/register.php made changes</description>
+    <time>1743706535.253</time>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.9">
