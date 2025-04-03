@@ -660,7 +660,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
   </widgets>
   <revision>
     <username>root@192.168.1.100</username>
-    <time>1743707582.8394</time>
+    <time>1743707814.8868</time>
     <description>Modified Universal Plug and Play settings</description>
   </revision>
   <OPNsense>
@@ -1796,7 +1796,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
         <overridesubnet/>
         <stun_host/>
         <stun_port/>
-        <permuser1>allow 1024-65535 192.168.1.149/32 1024-65535</permuser1>
+        <permuser1>allow 1024-65535 192.168.1.0/24 1024-65535</permuser1>
         <permuser2/>
         <permuser3/>
         <permuser4/>
