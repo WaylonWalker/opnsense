@@ -473,6 +473,14 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
         <ntpserver/>
       </staticmap>
       <staticmap>
+        <mac>28:cf:51:c4:77:58</mac>
+        <ipaddr>192.168.1.149</ipaddr>
+        <hostname>wyatt-switch-lite</hostname>
+        <winsserver/>
+        <dnsserver/>
+        <ntpserver/>
+      </staticmap>
+      <staticmap>
         <mac>9c:8e:cd:3d:89:58</mac>
         <ipaddr>192.168.1.159</ipaddr>
         <hostname>AMC091CB203950F639</hostname>
@@ -652,8 +660,8 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
   </widgets>
   <revision>
     <username>root@192.168.1.100</username>
-    <time>1743386539.2556</time>
-    <description>/firewall_nat.php made changes</description>
+    <time>1743706397.2841</time>
+    <description>/services_dhcp_edit.php made changes</description>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.9">
