@@ -659,9 +659,9 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
     <column_count>2</column_count>
   </widgets>
   <revision>
-    <username>(system)</username>
-    <description>/usr/local/opnsense/scripts/firmware/register.php made changes</description>
-    <time>1743706535.253</time>
+    <username>root@192.168.1.100</username>
+    <time>1743706982.5432</time>
+    <description>Modified Universal Plug and Play settings</description>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.9">
@@ -1783,4 +1783,29 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
   </cert>
   <syslog/>
   <crl/>
+  <installedpackages>
+    <miniupnpd>
+      <config>
+        <enable>1</enable>
+        <enable_upnp>1</enable_upnp>
+        <enable_natpmp>1</enable_natpmp>
+        <ext_iface>wan</ext_iface>
+        <download/>
+        <upload/>
+        <overridewanip/>
+        <overridesubnet/>
+        <stun_host/>
+        <stun_port/>
+        <permuser1>allow 1024-65535 192.168.1.149 1024-65535</permuser1>
+        <permuser2/>
+        <permuser3/>
+        <permuser4/>
+        <permuser5/>
+        <permuser6/>
+        <permuser7/>
+        <permuser8/>
+        <iface_array>lan</iface_array>
+      </config>
+    </miniupnpd>
+  </installedpackages>
 </opnsense>
