@@ -577,7 +577,36 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
       <mode>hybrid</mode>
       <rule/>
     </outbound>
-    <rule/>
+    <rule>
+      <protocol>udp</protocol>
+      <interface>wan</interface>
+      <category/>
+      <ipprotocol>inet</ipprotocol>
+      <descr>DMZ for Wyatt Switch Lite online stardew share</descr>
+      <tag/>
+      <tagged/>
+      <poolopts/>
+      <associated-rule-id>nat_67eee15ae668a7.73865797</associated-rule-id>
+      <target>192.168.1.149</target>
+      <local-port>45000</local-port>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <network>wanip</network>
+        <port>45000-65535</port>
+      </destination>
+      <updated>
+        <username>root@192.168.1.100</username>
+        <time>1743708506.9438</time>
+        <description>/firewall_nat_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.1.100</username>
+        <time>1743708506.9438</time>
+        <description>/firewall_nat_edit.php made changes</description>
+      </created>
+    </rule>
   </nat>
   <filter>
     <rule uuid="65efc611-3c98-47d5-961b-17367d0b9a14">
@@ -603,6 +632,27 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
       <destination>
         <any/>
       </destination>
+    </rule>
+    <rule>
+      <associated-rule-id>nat_67eee15ae668a7.73865797</associated-rule-id>
+      <source>
+        <any>1</any>
+      </source>
+      <interface>wan</interface>
+      <statetype>keep state</statetype>
+      <protocol>udp</protocol>
+      <ipprotocol>inet</ipprotocol>
+      <destination>
+        <address>192.168.1.149</address>
+        <port>45000-65535</port>
+      </destination>
+      <descr>DMZ for Wyatt Switch Lite online stardew share</descr>
+      <category/>
+      <created>
+        <username>root@192.168.1.100</username>
+        <time>1743708506.9438</time>
+        <description>/firewall_nat_edit.php made changes</description>
+      </created>
     </rule>
   </filter>
   <rrd>
@@ -660,8 +710,8 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
   </widgets>
   <revision>
     <username>root@192.168.1.100</username>
-    <time>1743707814.8868</time>
-    <description>Modified Universal Plug and Play settings</description>
+    <time>1743708507.0016</time>
+    <description>/firewall_nat_edit.php made changes</description>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.9">
