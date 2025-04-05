@@ -710,8 +710,8 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
   </widgets>
   <revision>
     <username>root@192.168.1.100</username>
-    <time>1743708545.5621</time>
-    <description>/firewall_nat.php made changes</description>
+    <description>/api/unbound/settings/toggleHostOverride/d6bb73c5-b471-4b8a-9126-ad115fa3c35e made changes</description>
+    <time>1743817302.2297</time>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.9">
@@ -1037,7 +1037,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <description/>
         </host>
         <host uuid="d6bb73c5-b471-4b8a-9126-ad115fa3c35e">
-          <enabled>1</enabled>
+          <enabled>0</enabled>
           <hostname>nextcloud</hostname>
           <domain>wayl.one</domain>
           <rr>A</rr>
