@@ -710,8 +710,8 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
   </widgets>
   <revision>
     <username>root@192.168.1.100</username>
-    <description>/api/unbound/settings/addHostOverride/ made changes</description>
-    <time>1751028799.7371</time>
+    <description>/api/unbound/settings/delHostOverride/bc02f95d-867c-4424-b64b-0939c76a1796 made changes</description>
+    <time>1751028813.8809</time>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.9">
@@ -1055,16 +1055,6 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <mx/>
           <server>192.168.1.168</server>
           <description>mino-direct</description>
-        </host>
-        <host uuid="bc02f95d-867c-4424-b64b-0939c76a1796">
-          <enabled>1</enabled>
-          <hostname>nextcloud</hostname>
-          <domain>wayl.one</domain>
-          <rr>A</rr>
-          <mxprio/>
-          <mx/>
-          <server>192.168.1.168</server>
-          <description>nextcloud-direct</description>
         </host>
       </hosts>
       <aliases/>
