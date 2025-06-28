@@ -519,6 +519,14 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
         <ntpserver/>
       </staticmap>
       <staticmap>
+        <mac>8c:ec:4b:81:3c:16</mac>
+        <ipaddr>192.168.1.168</ipaddr>
+        <hostname>falcon2</hostname>
+        <winsserver/>
+        <dnsserver/>
+        <ntpserver/>
+      </staticmap>
+      <staticmap>
         <mac>52:54:00:9d:d6:40</mac>
         <ipaddr>192.168.1.169</ipaddr>
         <hostname>k3s-p1</hostname>
@@ -710,8 +718,8 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
   </widgets>
   <revision>
     <username>root@192.168.1.100</username>
-    <description>/api/unbound/settings/delHostOverride/bc02f95d-867c-4424-b64b-0939c76a1796 made changes</description>
-    <time>1751028813.8809</time>
+    <time>1751129625.6726</time>
+    <description>/services_dhcp_edit.php made changes</description>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.9">
