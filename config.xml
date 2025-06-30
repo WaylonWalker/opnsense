@@ -440,8 +440,10 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
       </staticmap>
       <staticmap>
         <mac>38:60:77:37:b1:42</mac>
+        <cid>falcon1</cid>
         <ipaddr>192.168.1.106</ipaddr>
-        <hostname>falcon-FX6860</hostname>
+        <hostname>falcon1</hostname>
+        <descr>falcon1-Gateway FX6860</descr>
         <arp_table_static_entry>1</arp_table_static_entry>
         <winsserver/>
         <dnsserver/>
@@ -728,7 +730,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
   </widgets>
   <revision>
     <username>root@192.168.1.100</username>
-    <time>1751299537.0455</time>
+    <time>1751299712.8468</time>
     <description>/services_dhcp_edit.php made changes</description>
   </revision>
   <OPNsense>
