@@ -573,6 +573,16 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
         <dnsserver/>
         <ntpserver/>
       </staticmap>
+      <staticmap>
+        <mac>a8:a1:59:f6:f1:ca</mac>
+        <cid>falcon3</cid>
+        <ipaddr>192.168.1.234</ipaddr>
+        <hostname>falcon3</hostname>
+        <descr>silverstone micro-atx 5bay hotswap</descr>
+        <winsserver/>
+        <dnsserver/>
+        <ntpserver/>
+      </staticmap>
     </lan>
   </dhcpd>
   <snmpd>
@@ -718,7 +728,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
   </widgets>
   <revision>
     <username>root@192.168.1.100</username>
-    <time>1751129625.6726</time>
+    <time>1751299537.0455</time>
     <description>/services_dhcp_edit.php made changes</description>
   </revision>
   <OPNsense>
