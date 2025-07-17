@@ -598,7 +598,6 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
       <rule/>
     </outbound>
     <rule>
-      <protocol>udp</protocol>
       <interface>wan</interface>
       <category/>
       <ipprotocol>inet</ipprotocol>
@@ -607,18 +606,19 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
       <tagged/>
       <poolopts/>
       <associated-rule-id>nat_67eee15ae668a7.73865797</associated-rule-id>
-      <target>192.168.1.149</target>
-      <local-port>45000</local-port>
+      <target>192.168.1.50</target>
+      <local-port/>
       <source>
         <any>1</any>
+        <port/>
       </source>
       <destination>
         <network>wanip</network>
-        <port>45000-65535</port>
+        <port/>
       </destination>
       <updated>
-        <username>root@192.168.1.100</username>
-        <time>1743708506.9438</time>
+        <username>root@192.168.1.138</username>
+        <time>1752771570.7802</time>
         <description>/firewall_nat_edit.php made changes</description>
       </updated>
       <created>
@@ -657,14 +657,14 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
       <associated-rule-id>nat_67eee15ae668a7.73865797</associated-rule-id>
       <source>
         <any>1</any>
+        <port/>
       </source>
       <interface>wan</interface>
       <statetype>keep state</statetype>
-      <protocol>udp</protocol>
       <ipprotocol>inet</ipprotocol>
       <destination>
-        <address>192.168.1.149</address>
-        <port>45000-65535</port>
+        <address>192.168.1.50</address>
+        <port/>
       </destination>
       <descr>DMZ for Wyatt Switch Lite online stardew share</descr>
       <category/>
@@ -729,9 +729,9 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
     <column_count>2</column_count>
   </widgets>
   <revision>
-    <username>root@192.168.1.100</username>
-    <time>1751299712.8468</time>
-    <description>/services_dhcp_edit.php made changes</description>
+    <username>root@192.168.1.138</username>
+    <time>1752771570.8386</time>
+    <description>/firewall_nat_edit.php made changes</description>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.9">
