@@ -729,9 +729,9 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
     <column_count>2</column_count>
   </widgets>
   <revision>
-    <username>root@192.168.1.138</username>
-    <time>1752771598.7636</time>
-    <description>/firewall_nat.php made changes</description>
+    <username>root@192.168.1.100</username>
+    <description>/api/unbound/settings/addHostOverride/ made changes</description>
+    <time>1756948812.4642</time>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.9">
@@ -1075,6 +1075,16 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <mx/>
           <server>192.168.1.168</server>
           <description>mino-direct</description>
+        </host>
+        <host uuid="50cec6ae-4207-4085-87bb-de3d1ae0c9c0">
+          <enabled>1</enabled>
+          <hostname>git</hostname>
+          <domain>wayl.one</domain>
+          <rr>A</rr>
+          <mxprio/>
+          <mx/>
+          <server>192.168.1.168</server>
+          <description>registry-direct</description>
         </host>
       </hosts>
       <aliases/>
