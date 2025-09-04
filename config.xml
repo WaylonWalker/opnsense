@@ -730,8 +730,8 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
   </widgets>
   <revision>
     <username>root@192.168.1.100</username>
-    <description>/api/unbound/settings/addHostOverride/ made changes</description>
-    <time>1756948812.4642</time>
+    <description>/api/unbound/settings/setHostOverride/50cec6ae-4207-4085-87bb-de3d1ae0c9c0 made changes</description>
+    <time>1756948828.8092</time>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.9">
@@ -1084,7 +1084,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <mxprio/>
           <mx/>
           <server>192.168.1.168</server>
-          <description>registry-direct</description>
+          <description>git-direct</description>
         </host>
       </hosts>
       <aliases/>
