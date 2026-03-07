@@ -1,242 +1,254 @@
 <?xml version="1.0"?>
 <opnsense>
   <theme>rebellion</theme>
-  <sysctl>
-    <item>
-      <descr>Increase UFS read-ahead speeds to match the state of hard drives and NCQ.</descr>
+  <sysctl version="1.0.1">
+    <item uuid="05fd628b-1479-4702-a21e-42b4fe75d8c7">
       <tunable>vfs.read_max</tunable>
-      <value>default</value>
+      <value/>
+      <descr>Increase UFS read-ahead speeds to match the state of hard drives and NCQ.</descr>
     </item>
-    <item>
-      <descr>Set the ephemeral port range to be lower.</descr>
+    <item uuid="7949bb74-b0e2-4eb0-8aa7-7a55f542f000">
       <tunable>net.inet.ip.portrange.first</tunable>
-      <value>default</value>
+      <value/>
+      <descr>Set the ephemeral port range to be lower.</descr>
     </item>
-    <item>
-      <descr>Drop packets to closed TCP ports without returning a RST</descr>
+    <item uuid="ba506b78-4d88-4722-b036-69a8cec4345c">
       <tunable>net.inet.tcp.blackhole</tunable>
-      <value>default</value>
+      <value/>
+      <descr>Drop packets to closed TCP ports without returning a RST</descr>
     </item>
-    <item>
-      <descr>Do not send ICMP port unreachable messages for closed UDP ports</descr>
+    <item uuid="dee3bf8e-59a4-45fb-864f-5a002bd3ba80">
       <tunable>net.inet.udp.blackhole</tunable>
-      <value>default</value>
+      <value/>
+      <descr>Do not send ICMP port unreachable messages for closed UDP ports</descr>
     </item>
-    <item>
-      <descr>Randomize the ID field in IP packets</descr>
+    <item uuid="20a32adf-d79c-4460-a551-f74c6b9fdb50">
       <tunable>net.inet.ip.random_id</tunable>
-      <value>default</value>
+      <value/>
+      <descr>Randomize the ID field in IP packets</descr>
     </item>
-    <item>
-      <descr>
-        Source routing is another way for an attacker to try to reach non-routable addresses behind your box.
-        It can also be used to probe for information about your internal networks. These functions come enabled
-        as part of the standard FreeBSD core system.
-      </descr>
+    <item uuid="06b14d6b-175f-49e9-82e8-e229d2d68e65">
       <tunable>net.inet.ip.sourceroute</tunable>
-      <value>default</value>
-    </item>
-    <item>
+      <value/>
       <descr>
         Source routing is another way for an attacker to try to reach non-routable addresses behind your box.
         It can also be used to probe for information about your internal networks. These functions come enabled
         as part of the standard FreeBSD core system.
       </descr>
-      <tunable>net.inet.ip.accept_sourceroute</tunable>
-      <value>default</value>
     </item>
-    <item>
+    <item uuid="22d39c9f-3b3b-4179-8964-fe83ac157d89">
+      <tunable>net.inet.ip.accept_sourceroute</tunable>
+      <value/>
+      <descr>
+        Source routing is another way for an attacker to try to reach non-routable addresses behind your box.
+        It can also be used to probe for information about your internal networks. These functions come enabled
+        as part of the standard FreeBSD core system.
+      </descr>
+    </item>
+    <item uuid="88d7f771-d53d-42a2-ae48-ebfdf5468bf7">
+      <tunable>net.inet.icmp.log_redirect</tunable>
+      <value/>
       <descr>
         This option turns off the logging of redirect packets because there is no limit and this could fill
         up your logs consuming your whole hard drive.
       </descr>
-      <tunable>net.inet.icmp.log_redirect</tunable>
-      <value>default</value>
     </item>
-    <item>
-      <descr>Drop SYN-FIN packets (breaks RFC1379, but nobody uses it anyway)</descr>
+    <item uuid="cc439134-8d16-48cc-bb3b-b01c2e039901">
       <tunable>net.inet.tcp.drop_synfin</tunable>
-      <value>default</value>
+      <value/>
+      <descr>Drop SYN-FIN packets (breaks RFC1379, but nobody uses it anyway)</descr>
     </item>
-    <item>
-      <descr>Enable sending IPv6 redirects</descr>
+    <item uuid="70636cb4-4841-42d2-ae72-5168efabed15">
       <tunable>net.inet6.ip6.redirect</tunable>
-      <value>default</value>
+      <value/>
+      <descr>Enable sending IPv6 redirects</descr>
     </item>
-    <item>
-      <descr>Enable privacy settings for IPv6 (RFC 4941)</descr>
+    <item uuid="09d45799-f34f-4ea0-8494-d8bc208e50a8">
       <tunable>net.inet6.ip6.use_tempaddr</tunable>
-      <value>default</value>
+      <value/>
+      <descr>Enable privacy settings for IPv6 (RFC 4941)</descr>
     </item>
-    <item>
-      <descr>Prefer privacy addresses and use them over the normal addresses</descr>
+    <item uuid="037daa3a-65a3-4960-8d7b-ee3482483685">
       <tunable>net.inet6.ip6.prefer_tempaddr</tunable>
-      <value>default</value>
+      <value/>
+      <descr>Prefer privacy addresses and use them over the normal addresses</descr>
     </item>
-    <item>
-      <descr>Generate SYN cookies for outbound SYN-ACK packets</descr>
+    <item uuid="d013110c-7a93-4825-a84c-32ffbd3d8c08">
       <tunable>net.inet.tcp.syncookies</tunable>
-      <value>default</value>
+      <value/>
+      <descr>Generate SYN cookies for outbound SYN-ACK packets</descr>
     </item>
-    <item>
-      <descr>Maximum incoming/outgoing TCP datagram size (receive)</descr>
+    <item uuid="36d05b57-0c5e-472e-860a-47c7c5baa27f">
       <tunable>net.inet.tcp.recvspace</tunable>
-      <value>default</value>
+      <value/>
+      <descr>Maximum incoming/outgoing TCP datagram size (receive)</descr>
     </item>
-    <item>
-      <descr>Maximum incoming/outgoing TCP datagram size (send)</descr>
+    <item uuid="2e396fae-e8f1-4549-9aae-a0f3c48deee7">
       <tunable>net.inet.tcp.sendspace</tunable>
-      <value>default</value>
+      <value/>
+      <descr>Maximum incoming/outgoing TCP datagram size (send)</descr>
     </item>
-    <item>
-      <descr>Do not delay ACK to try and piggyback it onto a data packet</descr>
+    <item uuid="7dcdb5e1-6d2e-43c6-a56f-e083cbbd3432">
       <tunable>net.inet.tcp.delayed_ack</tunable>
-      <value>default</value>
+      <value/>
+      <descr>Do not delay ACK to try and piggyback it onto a data packet</descr>
     </item>
-    <item>
-      <descr>Maximum outgoing UDP datagram size</descr>
+    <item uuid="1d967a0c-c079-4514-a478-b7903c9fa31b">
       <tunable>net.inet.udp.maxdgram</tunable>
-      <value>default</value>
+      <value/>
+      <descr>Maximum outgoing UDP datagram size</descr>
     </item>
-    <item>
-      <descr>Handling of non-IP packets which are not passed to pfil (see if_bridge(4))</descr>
+    <item uuid="58b9b759-267a-4699-80eb-fcc05eb2f203">
       <tunable>net.link.bridge.pfil_onlyip</tunable>
-      <value>default</value>
+      <value/>
+      <descr>Handling of non-IP packets which are not passed to pfil (see if_bridge(4))</descr>
     </item>
-    <item>
-      <descr>Set to 1 to additionally filter on the physical interface for locally destined packets</descr>
+    <item uuid="46975fcf-a594-4a9d-bf45-dbac1bc84ad4">
       <tunable>net.link.bridge.pfil_local_phys</tunable>
-      <value>default</value>
+      <value/>
+      <descr>Set to 1 to additionally filter on the physical interface for locally destined packets</descr>
     </item>
-    <item>
-      <descr>Set to 0 to disable filtering on the incoming and outgoing member interfaces.</descr>
+    <item uuid="742a09c7-d5b2-469a-8102-7a804592f49d">
       <tunable>net.link.bridge.pfil_member</tunable>
-      <value>default</value>
+      <value/>
+      <descr>Set to 0 to disable filtering on the incoming and outgoing member interfaces.</descr>
     </item>
-    <item>
-      <descr>Set to 1 to enable filtering on the bridge interface</descr>
+    <item uuid="a78b6f6f-10c2-47a0-8368-bfc2ecabf8a6">
       <tunable>net.link.bridge.pfil_bridge</tunable>
-      <value>default</value>
+      <value/>
+      <descr>Set to 1 to enable filtering on the bridge interface</descr>
     </item>
-    <item>
-      <descr>Allow unprivileged access to tap(4) device nodes</descr>
+    <item uuid="bb6daa1d-0818-4cbd-bf71-3396d1d311ec">
       <tunable>net.link.tap.user_open</tunable>
-      <value>default</value>
+      <value/>
+      <descr>Allow unprivileged access to tap(4) device nodes</descr>
     </item>
-    <item>
-      <descr>Randomize PID's (see src/sys/kern/kern_fork.c: sysctl_kern_randompid())</descr>
+    <item uuid="b9911f0f-6bee-47ad-937a-9fa2f11dbecf">
       <tunable>kern.randompid</tunable>
-      <value>default</value>
+      <value/>
+      <descr>Randomize PID's (see src/sys/kern/kern_fork.c: sysctl_kern_randompid())</descr>
     </item>
-    <item>
-      <descr>Disable CTRL+ALT+Delete reboot from keyboard.</descr>
+    <item uuid="85e7399a-192a-47ce-821f-b73eb42ca93c">
       <tunable>hw.syscons.kbd_reboot</tunable>
-      <value>default</value>
+      <value/>
+      <descr>Disable CTRL+ALT+Delete reboot from keyboard.</descr>
     </item>
-    <item>
-      <descr>Enable TCP extended debugging</descr>
+    <item uuid="542b6992-75a6-4a1a-b67d-9a24111fb295">
       <tunable>net.inet.tcp.log_debug</tunable>
-      <value>default</value>
+      <value/>
+      <descr>Enable TCP extended debugging</descr>
     </item>
-    <item>
-      <descr>Set ICMP Limits</descr>
+    <item uuid="1cde9ed7-8612-4a89-8f9c-5e727f94ec34">
       <tunable>net.inet.icmp.icmplim</tunable>
-      <value>default</value>
+      <value/>
+      <descr>Set ICMP Limits</descr>
     </item>
-    <item>
-      <descr>TCP Offload Engine</descr>
+    <item uuid="aa0e66dc-2c23-41e3-9460-9c5cb1410003">
       <tunable>net.inet.tcp.tso</tunable>
-      <value>default</value>
+      <value/>
+      <descr>TCP Offload Engine</descr>
     </item>
-    <item>
-      <descr>UDP Checksums</descr>
+    <item uuid="b21b4835-9c0c-4998-9a2f-ebdbda42239f">
       <tunable>net.inet.udp.checksum</tunable>
-      <value>default</value>
+      <value/>
+      <descr>UDP Checksums</descr>
     </item>
-    <item>
-      <descr>Maximum socket buffer size</descr>
+    <item uuid="dfb9b5c0-217e-4dc0-8c3a-45587602cd6e">
       <tunable>kern.ipc.maxsockbuf</tunable>
-      <value>default</value>
+      <value/>
+      <descr>Maximum socket buffer size</descr>
     </item>
-    <item>
-      <descr>Page Table Isolation (Meltdown mitigation, requires reboot.)</descr>
+    <item uuid="eb569987-885d-400a-80a8-df52c2c08e83">
       <tunable>vm.pmap.pti</tunable>
-      <value>default</value>
+      <value/>
+      <descr>Page Table Isolation (Meltdown mitigation, requires reboot.)</descr>
     </item>
-    <item>
-      <descr>Disable Indirect Branch Restricted Speculation (Spectre V2 mitigation)</descr>
+    <item uuid="84c6dcbb-c74a-4fb0-b1de-b6f0ba85b0fb">
       <tunable>hw.ibrs_disable</tunable>
-      <value>default</value>
+      <value/>
+      <descr>Disable Indirect Branch Restricted Speculation (Spectre V2 mitigation)</descr>
     </item>
-    <item>
-      <descr>Hide processes running as other groups</descr>
+    <item uuid="6115199f-7cfe-43f4-b34b-18c615d06a55">
       <tunable>security.bsd.see_other_gids</tunable>
-      <value>default</value>
+      <value/>
+      <descr>Hide processes running as other groups</descr>
     </item>
-    <item>
-      <descr>Hide processes running as other users</descr>
+    <item uuid="19ac10f9-bd60-41e3-ba83-f759e72b753f">
       <tunable>security.bsd.see_other_uids</tunable>
-      <value>default</value>
+      <value/>
+      <descr>Hide processes running as other users</descr>
     </item>
-    <item>
+    <item uuid="d187a5ef-0c28-46a0-b594-e9efcaa76479">
+      <tunable>net.inet.ip.redirect</tunable>
+      <value/>
       <descr>Enable/disable sending of ICMP redirects in response to IP packets for which a better,
         and for the sender directly reachable, route and next hop is known.
       </descr>
-      <tunable>net.inet.ip.redirect</tunable>
-      <value>default</value>
     </item>
-    <item>
+    <item uuid="9bf9f4f3-7278-452d-8843-83b14b6495cf">
+      <tunable>net.inet.icmp.drop_redirect</tunable>
+      <value>1</value>
       <descr>
         Redirect attacks are the purposeful mass-issuing of ICMP type 5 packets. In a normal network, redirects
         to the end stations should not be required. This option enables the NIC to drop all inbound ICMP redirect
         packets without returning a response.
       </descr>
-      <tunable>net.inet.icmp.drop_redirect</tunable>
-      <value>1</value>
     </item>
-    <item>
-      <descr>Maximum outgoing UDP datagram size</descr>
+    <item uuid="38ec945a-3faf-43d0-a6ec-625dd987c05e">
       <tunable>net.local.dgram.maxdgram</tunable>
-      <value>default</value>
+      <value/>
+      <descr>Maximum outgoing UDP datagram size</descr>
     </item>
   </sysctl>
   <system>
     <optimization>normal</optimization>
     <hostname>OPNsense</hostname>
     <domain>lan</domain>
-    <group>
-      <name>admins</name>
-      <description>System Administrators</description>
-      <scope>system</scope>
+    <group uuid="dcd4176c-e609-4881-a79e-827d59bb25cf">
       <gid>1999</gid>
-      <member>0</member>
-      <member>2000</member>
-      <priv>page-all</priv>
-    </group>
-    <user>
-      <name>root</name>
-      <descr>System Administrator</descr>
+      <name>admins</name>
       <scope>system</scope>
-      <groupname>admins</groupname>
-      <password>$2y$11$iPjVjQ6qeXicKxg54K5NTO3R8xmMcJLmyc7C5WVxSc9Ve.1Ddxyme</password>
+      <description>System Administrators</description>
+      <priv>page-all</priv>
+      <member>0,2000</member>
+    </group>
+    <user uuid="0e303fff-3bb6-42fc-9abe-cb73b7c061e3">
       <uid>0</uid>
-    </user>
-    <user>
-      <password>$2y$11$iZJkQAOm.8cwWzGkTWCYGOE3MYK1I4l2KqrHhaD8OShs3NJ/J/yc6</password>
-      <scope>user</scope>
-      <name>waylon</name>
-      <descr>Waylon Walker</descr>
+      <name>root</name>
+      <disabled>0</disabled>
+      <scope>system</scope>
       <expires/>
       <authorizedkeys/>
       <otp_seed/>
-      <email>waylon@waylonwalker.com</email>
+      <shell/>
+      <password>$2y$11$iPjVjQ6qeXicKxg54K5NTO3R8xmMcJLmyc7C5WVxSc9Ve.1Ddxyme</password>
+      <landing_page/>
+      <comment/>
+      <email/>
+      <apikeys/>
+      <priv/>
+      <language/>
+      <descr>System Administrator</descr>
+      <dashboard/>
+    </user>
+    <user uuid="bc903da5-4251-4d29-b447-0ea3e2b46b70">
       <uid>2000</uid>
-      <apikeys>
-        <item>
-          <key>aE3Pbp40Qi1xUbE4aBepKKywGc3Emq1bKW8afvzCwBW+KGy+2hvE5TZWS7H20tgA+icvgodt5t5vSGok</key>
-          <secret>$6$$IPl5k7jG1izlt4xJRZwD/2pwGig9atr6yhgtrZfTA0JUwjQFGuQrBNIABrzuRWK1myfapN1C8T9wgHBqKMJYb.</secret>
-        </item>
-      </apikeys>
+      <name>waylon</name>
+      <disabled>0</disabled>
+      <scope>user</scope>
+      <expires/>
+      <authorizedkeys/>
+      <otp_seed/>
+      <shell/>
+      <password>$2y$11$iZJkQAOm.8cwWzGkTWCYGOE3MYK1I4l2KqrHhaD8OShs3NJ/J/yc6</password>
+      <landing_page/>
+      <comment/>
+      <email>waylon@waylonwalker.com</email>
+      <apikeys>aE3Pbp40Qi1xUbE4aBepKKywGc3Emq1bKW8afvzCwBW+KGy+2hvE5TZWS7H20tgA+icvgodt5t5vSGok|$6$$IPl5k7jG1izlt4xJRZwD/2pwGig9atr6yhgtrZfTA0JUwjQFGuQrBNIABrzuRWK1myfapN1C8T9wgHBqKMJYb.</apikeys>
+      <priv/>
+      <language/>
+      <descr>Waylon Walker</descr>
+      <dashboard/>
     </user>
     <nextuid>2001</nextuid>
     <nextgid>2000</nextgid>
@@ -306,12 +318,12 @@
         <enabled>1</enabled>
         <url>ssh://github.com/waylonwalker/opnsense.git</url>
         <branch>main</branch>
-        <privkey>-----BEGIN OPENSSH PRIVATE KEY-----&#xD;
-b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW&#xD;
-QyNTUxOQAAACC0UzxgWWw2Uo3qppmxk652WtO8V4g++nxBsOKft0Ms1QAAAJhepAAtXqQA&#xD;
-LQAAAAtzc2gtZWQyNTUxOQAAACC0UzxgWWw2Uo3qppmxk652WtO8V4g++nxBsOKft0Ms1Q&#xD;
-AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
-07xXiD76fEGw4p+3QyzVAAAAEXdheWxvbkByYXpvcmNyZXN0AQIDBA==&#xD;
+        <privkey>-----BEGIN OPENSSH PRIVATE KEY-----&#13;
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW&#13;
+QyNTUxOQAAACC0UzxgWWw2Uo3qppmxk652WtO8V4g++nxBsOKft0Ms1QAAAJhepAAtXqQA&#13;
+LQAAAAtzc2gtZWQyNTUxOQAAACC0UzxgWWw2Uo3qppmxk652WtO8V4g++nxBsOKft0Ms1Q&#13;
+AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
+07xXiD76fEGw4p+3QyzVAAAAEXdheWxvbkByYXpvcmNyZXN0AQIDBA==&#13;
 -----END OPENSSH PRIVATE KEY-----</privkey>
         <user>git</user>
         <password/>
@@ -731,10 +743,10 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
   <revision>
     <username>(system)</username>
     <description>/usr/local/opnsense/mvc/script/run_migrations.php made changes</description>
-    <time>1772908420.595</time>
+    <time>1772919176.8424</time>
   </revision>
   <OPNsense>
-    <unboundplus version="1.0.11">
+    <unboundplus version="1.0.12">
       <general>
         <enabled>1</enabled>
         <port>53</port>
@@ -821,6 +833,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <port>853</port>
           <verify>cloudflare-dns.com</verify>
           <forward_tcp_upstream>0</forward_tcp_upstream>
+          <forward_first>0</forward_first>
           <description/>
         </dot>
         <dot uuid="ab755864-96dc-4c9f-9318-42a642e090f4">
@@ -831,6 +844,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <port>853</port>
           <verify>cloudflare-dns.com</verify>
           <forward_tcp_upstream>0</forward_tcp_upstream>
+          <forward_first>0</forward_first>
           <description/>
         </dot>
         <dot uuid="1bfc36ce-f46d-429f-a60d-4d8e18c9c2f9">
@@ -841,6 +855,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <port>853</port>
           <verify>cloudflare-dns.com</verify>
           <forward_tcp_upstream>0</forward_tcp_upstream>
+          <forward_first>0</forward_first>
           <description/>
         </dot>
         <dot uuid="60d3124d-0fb7-4288-84d5-67d465464fca">
@@ -851,6 +866,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <port>853</port>
           <verify>cloudflare-dns.com</verify>
           <forward_tcp_upstream>0</forward_tcp_upstream>
+          <forward_first>0</forward_first>
           <description/>
         </dot>
         <dot uuid="a5310ad1-8cc4-429c-bb9e-7aaca782ac7a">
@@ -861,6 +877,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <port/>
           <verify/>
           <forward_tcp_upstream>0</forward_tcp_upstream>
+          <forward_first>0</forward_first>
           <description/>
         </dot>
         <dot uuid="a9e7c5e9-bd76-49c5-b0c8-c3bc393f746a">
@@ -871,6 +888,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <port/>
           <verify/>
           <forward_tcp_upstream>0</forward_tcp_upstream>
+          <forward_first>0</forward_first>
           <description/>
         </dot>
       </dots>
@@ -882,6 +900,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <rr>A</rr>
           <mxprio/>
           <mx/>
+          <ttl/>
           <server>192.168.1.168</server>
           <description>registry-direct</description>
         </host>
@@ -892,6 +911,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <rr>A</rr>
           <mxprio/>
           <mx/>
+          <ttl/>
           <server>192.168.1.106</server>
           <description/>
         </host>
@@ -902,6 +922,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <rr>A</rr>
           <mxprio/>
           <mx/>
+          <ttl/>
           <server>192.168.1.106</server>
           <description/>
         </host>
@@ -912,6 +933,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <rr>A</rr>
           <mxprio/>
           <mx/>
+          <ttl/>
           <server>192.168.1.106</server>
           <description/>
         </host>
@@ -922,6 +944,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <rr>A</rr>
           <mxprio/>
           <mx/>
+          <ttl/>
           <server>192.168.1.108</server>
           <description/>
         </host>
@@ -932,6 +955,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <rr>A</rr>
           <mxprio/>
           <mx/>
+          <ttl/>
           <server>192.168.1.132</server>
           <description/>
         </host>
@@ -942,6 +966,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <rr>A</rr>
           <mxprio/>
           <mx/>
+          <ttl/>
           <server>192.168.1.168</server>
           <description>jellyfin-direct</description>
         </host>
@@ -952,6 +977,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <rr>A</rr>
           <mxprio/>
           <mx/>
+          <ttl/>
           <server>192.168.1.106</server>
           <description/>
         </host>
@@ -962,6 +988,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <rr>A</rr>
           <mxprio/>
           <mx/>
+          <ttl/>
           <server>192.168.1.106</server>
           <description>prometheus-direct</description>
         </host>
@@ -972,6 +999,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <rr>A</rr>
           <mxprio/>
           <mx/>
+          <ttl/>
           <server>192.168.1.106</server>
           <description>frigate-direct</description>
         </host>
@@ -982,6 +1010,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <rr>A</rr>
           <mxprio/>
           <mx/>
+          <ttl/>
           <server>192.168.1.106</server>
           <description>frigate-direct</description>
         </host>
@@ -992,6 +1021,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <rr>A</rr>
           <mxprio/>
           <mx/>
+          <ttl/>
           <server>192.168.1.106</server>
           <description>frigate-direct</description>
         </host>
@@ -1002,6 +1032,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <rr>A</rr>
           <mxprio/>
           <mx/>
+          <ttl/>
           <server>192.168.1.106</server>
           <description>traefik-direct</description>
         </host>
@@ -1012,6 +1043,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <rr>A</rr>
           <mxprio/>
           <mx/>
+          <ttl/>
           <server>192.168.1.106</server>
           <description>traefik-direct</description>
         </host>
@@ -1022,6 +1054,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <rr>A</rr>
           <mxprio/>
           <mx/>
+          <ttl/>
           <server>192.168.1.106</server>
           <description>argocd-direct</description>
         </host>
@@ -1032,6 +1065,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <rr>A</rr>
           <mxprio/>
           <mx/>
+          <ttl/>
           <server>192.168.1.106</server>
           <description>argocd-direct</description>
         </host>
@@ -1042,6 +1076,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <rr>A</rr>
           <mxprio/>
           <mx/>
+          <ttl/>
           <server>192.168.1.106</server>
           <description>argo-workflows-direct</description>
         </host>
@@ -1052,6 +1087,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <rr>A</rr>
           <mxprio/>
           <mx/>
+          <ttl/>
           <server>192.168.1.168</server>
           <description>registry-ui-direct</description>
         </host>
@@ -1062,6 +1098,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <rr>A</rr>
           <mxprio/>
           <mx/>
+          <ttl/>
           <server>192.168.1.168</server>
           <description>speed-direct</description>
         </host>
@@ -1072,6 +1109,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <rr>A</rr>
           <mxprio/>
           <mx/>
+          <ttl/>
           <server>192.168.1.168</server>
           <description>wwdev-direct</description>
         </host>
@@ -1082,6 +1120,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <rr>A</rr>
           <mxprio/>
           <mx/>
+          <ttl/>
           <server>192.168.1.168</server>
           <description/>
         </host>
@@ -1092,6 +1131,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <rr>A</rr>
           <mxprio/>
           <mx/>
+          <ttl/>
           <server>192.168.1.168</server>
           <description>nextcloud-direct</description>
         </host>
@@ -1102,6 +1142,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <rr>A</rr>
           <mxprio/>
           <mx/>
+          <ttl/>
           <server>192.168.1.168</server>
           <description>mino-direct</description>
         </host>
@@ -1112,6 +1153,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <rr>A</rr>
           <mxprio/>
           <mx/>
+          <ttl/>
           <server>192.168.1.168</server>
           <description>git-direct</description>
         </host>
@@ -1119,7 +1161,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
       <aliases/>
     </unboundplus>
     <Kea>
-      <dhcp4 version="1.0.2">
+      <dhcp4 version="1.0.3">
         <general>
           <enabled>0</enabled>
           <interfaces/>
@@ -1143,6 +1185,24 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
           <http_port>8000</http_port>
         </general>
       </ctrl_agent>
+      <dhcp6 version="1.0.0">
+        <general>
+          <enabled>0</enabled>
+          <manual_config>0</manual_config>
+          <interfaces/>
+          <valid_lifetime>4000</valid_lifetime>
+          <fwrules>1</fwrules>
+        </general>
+        <ha>
+          <enabled>0</enabled>
+          <this_server_name/>
+          <max_unacked_clients>2</max_unacked_clients>
+        </ha>
+        <subnets/>
+        <reservations/>
+        <pd_pools/>
+        <ha_peers/>
+      </dhcp6>
     </Kea>
     <IDS version="1.1.0">
       <rules/>
@@ -1604,12 +1664,14 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
         <data_length/>
       </gateway_item>
     </Gateways>
-    <IPsec version="1.0.3">
+    <IPsec version="1.0.4">
       <general>
         <enabled/>
         <preferred_oldsa>0</preferred_oldsa>
         <disablevpnrules>0</disablevpnrules>
         <passthrough_networks/>
+        <user_source/>
+        <local_group/>
       </general>
       <charon>
         <max_ikev1_exchanges/>
@@ -1618,6 +1680,8 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
         <ikesa_table_segments>4</ikesa_table_segments>
         <init_limit_half_open>1000</init_limit_half_open>
         <ignore_acquire_ts>1</ignore_acquire_ts>
+        <install_routes>0</install_routes>
+        <cisco_unity>0</cisco_unity>
         <make_before_break/>
         <retransmit_tries/>
         <retransmit_timeout/>
@@ -1648,6 +1712,29 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
             <tnc>1</tnc>
           </daemon>
         </syslog>
+        <plugins>
+          <attr>
+            <subnet/>
+            <split-include/>
+            <x_28674/>
+            <x_28675/>
+            <x_28672/>
+            <x_28673>0</x_28673>
+            <x_28679/>
+            <dns/>
+            <nbns/>
+          </attr>
+          <eap-radius>
+            <servers/>
+            <accounting>0</accounting>
+            <class_group>0</class_group>
+          </eap-radius>
+          <xauth-pam>
+            <pam_service>ipsec</pam_service>
+            <session>0</session>
+            <trim_email>1</trim_email>
+          </xauth-pam>
+        </plugins>
       </charon>
       <keyPairs/>
       <preSharedKeys/>
@@ -1688,7 +1775,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
       <loopbacks version="1.0.0"/>
       <vxlans version="1.0.2"/>
     </Interfaces>
-    <captiveportal version="1.0.2">
+    <captiveportal version="1.0.4">
       <zones/>
       <templates/>
     </captiveportal>
@@ -1919,15 +2006,11 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
   <vlans version="1.0.0">
     <vlan/>
   </vlans>
-  <virtualip version="1.0.0">
-    <vip/>
-  </virtualip>
+  <virtualip version="1.0.1"/>
   <laggs version="1.0.0">
     <lagg/>
   </laggs>
-  <bridges>
-    <bridged/>
-  </bridges>
+  <bridges version="1.0.0"/>
   <gifs version="1.0.0"/>
   <gres version="1.0.0"/>
   <ppps>
@@ -1980,15 +2063,51 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#xD;
       </config>
     </miniupnpd>
   </installedpackages>
-  <hasync version="1.0.1">
+  <hasync version="1.0.2">
     <disablepreempt>0</disablepreempt>
     <disconnectppps>0</disconnectppps>
     <pfsyncinterface/>
     <pfsyncpeerip/>
     <pfsyncversion>1400</pfsyncversion>
     <synchronizetoip/>
+    <verifypeer>0</verifypeer>
     <username/>
     <password/>
     <syncitems/>
   </hasync>
+  <dnsmasq version="1.0.7">
+    <enable>0</enable>
+    <regdhcp>0</regdhcp>
+    <regdhcpstatic>0</regdhcpstatic>
+    <dhcpfirst>0</dhcpfirst>
+    <strict_order>0</strict_order>
+    <domain_needed>0</domain_needed>
+    <no_private_reverse>0</no_private_reverse>
+    <no_resolv>0</no_resolv>
+    <log_queries>0</log_queries>
+    <no_hosts>0</no_hosts>
+    <strictbind>0</strictbind>
+    <dnssec>0</dnssec>
+    <regdhcpdomain/>
+    <interface/>
+    <port/>
+    <dns_forward_max/>
+    <cache_size/>
+    <local_ttl/>
+    <add_mac/>
+    <add_subnet>0</add_subnet>
+    <strip_subnet>0</strip_subnet>
+    <dhcp>
+      <no_interface/>
+      <fqdn>1</fqdn>
+      <domain/>
+      <lease_max/>
+      <authoritative>0</authoritative>
+      <default_fw_rules>1</default_fw_rules>
+      <reply_delay/>
+      <enable_ra>0</enable_ra>
+      <nosync>0</nosync>
+    </dhcp>
+    <no_ident>1</no_ident>
+  </dnsmasq>
 </opnsense>
