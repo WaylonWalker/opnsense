@@ -296,7 +296,7 @@
     <firmware version="1.0.1">
       <mirror/>
       <flavour/>
-      <plugins>os-git-backup,os-theme-rebellion,os-upnp</plugins>
+      <plugins>os-git-backup,os-isc-dhcp,os-theme-rebellion,os-upnp</plugins>
       <type/>
       <subscription/>
       <reboot/>
@@ -742,8 +742,8 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
   </widgets>
   <revision>
     <username>(system)</username>
-    <description>/usr/local/opnsense/mvc/script/run_migrations.php made changes</description>
-    <time>1772927812.58</time>
+    <description>/usr/local/opnsense/scripts/firmware/register.php made changes</description>
+    <time>1772984625.06</time>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.13" persisted_at="1772927811.16" description="Unbound configuration">
