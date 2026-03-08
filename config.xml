@@ -265,11 +265,6 @@
     <disablenatreflection>yes</disablenatreflection>
     <usevirtualterminal>1</usevirtualterminal>
     <disableconsolemenu>1</disableconsolemenu>
-    <disablevlanhwfilter>1</disablevlanhwfilter>
-    <disablechecksumoffloading>1</disablechecksumoffloading>
-    <disablesegmentationoffloading>1</disablesegmentationoffloading>
-    <disablelargereceiveoffloading>1</disablelargereceiveoffloading>
-    <ipv6allow/>
     <powerd_ac_mode>hadp</powerd_ac_mode>
     <powerd_battery_mode>hadp</powerd_battery_mode>
     <powerd_normal_mode>hadp</powerd_normal_mode>
@@ -609,35 +604,45 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
       <mode>hybrid</mode>
       <rule/>
     </outbound>
-    <rule>
+    <rule uuid="3da56a88-f528-4bcf-9be0-7ff8009b59a8">
+      <sequence>100</sequence>
+      <disabled>0</disabled>
+      <nordr>0</nordr>
       <interface>wan</interface>
-      <category/>
       <ipprotocol>inet</ipprotocol>
-      <descr>DMZ for Wyatt Switch Lite online stardew share</descr>
-      <tag/>
-      <tagged/>
-      <poolopts/>
-      <associated-rule-id>nat_67eee15ae668a7.73865797</associated-rule-id>
-      <target>192.168.1.50</target>
-      <local-port/>
+      <protocol/>
       <source>
-        <any>1</any>
+        <network/>
         <port/>
+        <not>0</not>
       </source>
       <destination>
         <network>wanip</network>
         <port/>
+        <not>0</not>
       </destination>
-      <updated>
-        <username>root@192.168.1.138</username>
-        <time>1752771570.7802</time>
-        <description>/firewall_nat_edit.php made changes</description>
-      </updated>
+      <target>192.168.1.50</target>
+      <local-port/>
+      <poolopts/>
+      <log>0</log>
+      <category/>
+      <descr>DMZ for Wyatt Switch Lite online stardew share</descr>
+      <tag/>
+      <tagged/>
+      <nosync>0</nosync>
+      <natreflection/>
+      <pass/>
+      <associated-rule-id/>
       <created>
         <username>root@192.168.1.100</username>
         <time>1743708506.9438</time>
         <description>/firewall_nat_edit.php made changes</description>
       </created>
+      <updated>
+        <username>root@192.168.1.138</username>
+        <time>1752771570.7802</time>
+        <description>/firewall_nat_edit.php made changes</description>
+      </updated>
     </rule>
   </nat>
   <filter>
@@ -741,12 +746,12 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
     <column_count>2</column_count>
   </widgets>
   <revision>
-    <username>(system)</username>
-    <description>/usr/local/opnsense/scripts/firmware/register.php made changes</description>
-    <time>1772984625.06</time>
+    <username>(root)</username>
+    <description>/usr/local/opnsense/mvc/script/run_migrations.php made changes</description>
+    <time>1772985829.43</time>
   </revision>
   <OPNsense>
-    <unboundplus version="1.0.13" persisted_at="1772927811.16" description="Unbound configuration">
+    <unboundplus version="1.0.14" persisted_at="1772985827.56" description="Unbound configuration">
       <general>
         <enabled>1</enabled>
         <port>53</port>
@@ -908,6 +913,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <ttl/>
           <server>192.168.1.168</server>
           <txtdata/>
+          <addptr>1</addptr>
           <description>registry-direct</description>
         </host>
         <host uuid="6ed31b9b-7f47-4ed8-aedb-f88d37509d3a">
@@ -920,6 +926,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <ttl/>
           <server>192.168.1.106</server>
           <txtdata/>
+          <addptr>1</addptr>
           <description/>
         </host>
         <host uuid="552f8a25-c690-4abc-919a-c01d68656126">
@@ -932,6 +939,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <ttl/>
           <server>192.168.1.106</server>
           <txtdata/>
+          <addptr>1</addptr>
           <description/>
         </host>
         <host uuid="a9afe0ee-3324-4275-bcfe-07e12cf325d0">
@@ -944,6 +952,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <ttl/>
           <server>192.168.1.106</server>
           <txtdata/>
+          <addptr>1</addptr>
           <description/>
         </host>
         <host uuid="da19fde3-53f7-4247-8722-710da90f788b">
@@ -956,6 +965,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <ttl/>
           <server>192.168.1.108</server>
           <txtdata/>
+          <addptr>1</addptr>
           <description/>
         </host>
         <host uuid="a7eb473b-add8-47d3-b861-41851a81548f">
@@ -968,6 +978,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <ttl/>
           <server>192.168.1.132</server>
           <txtdata/>
+          <addptr>1</addptr>
           <description/>
         </host>
         <host uuid="468b859e-4e8d-4607-ae22-fea142c6eb46">
@@ -980,6 +991,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <ttl/>
           <server>192.168.1.168</server>
           <txtdata/>
+          <addptr>1</addptr>
           <description>jellyfin-direct</description>
         </host>
         <host uuid="d599e587-443e-4e36-818f-cf90e7e2ea14">
@@ -992,6 +1004,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <ttl/>
           <server>192.168.1.106</server>
           <txtdata/>
+          <addptr>1</addptr>
           <description/>
         </host>
         <host uuid="e7d04b34-6540-4774-8a39-1928cc4e11be">
@@ -1004,6 +1017,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <ttl/>
           <server>192.168.1.106</server>
           <txtdata/>
+          <addptr>1</addptr>
           <description>prometheus-direct</description>
         </host>
         <host uuid="b4a2bfb1-588e-41f8-bdb3-0df63814f2f9">
@@ -1016,6 +1030,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <ttl/>
           <server>192.168.1.106</server>
           <txtdata/>
+          <addptr>1</addptr>
           <description>frigate-direct</description>
         </host>
         <host uuid="b18632e6-a66f-468a-add1-52ee85a6d569">
@@ -1028,6 +1043,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <ttl/>
           <server>192.168.1.106</server>
           <txtdata/>
+          <addptr>1</addptr>
           <description>frigate-direct</description>
         </host>
         <host uuid="ddbb4860-9543-48dc-82d9-43a2467bd54f">
@@ -1040,6 +1056,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <ttl/>
           <server>192.168.1.106</server>
           <txtdata/>
+          <addptr>1</addptr>
           <description>frigate-direct</description>
         </host>
         <host uuid="70efea39-2a15-4938-8c37-72f7263dad30">
@@ -1052,6 +1069,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <ttl/>
           <server>192.168.1.106</server>
           <txtdata/>
+          <addptr>1</addptr>
           <description>traefik-direct</description>
         </host>
         <host uuid="df090ae9-0918-4a21-815e-13c8254c0e32">
@@ -1064,6 +1082,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <ttl/>
           <server>192.168.1.106</server>
           <txtdata/>
+          <addptr>1</addptr>
           <description>traefik-direct</description>
         </host>
         <host uuid="5667a5dc-f6bd-4d06-8f02-f0e684773b04">
@@ -1076,6 +1095,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <ttl/>
           <server>192.168.1.106</server>
           <txtdata/>
+          <addptr>1</addptr>
           <description>argocd-direct</description>
         </host>
         <host uuid="d1f2b13f-475c-4dda-9620-971790773aa6">
@@ -1088,6 +1108,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <ttl/>
           <server>192.168.1.106</server>
           <txtdata/>
+          <addptr>1</addptr>
           <description>argocd-direct</description>
         </host>
         <host uuid="9a212221-7968-4002-bc99-7b3b9968fde7">
@@ -1100,6 +1121,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <ttl/>
           <server>192.168.1.106</server>
           <txtdata/>
+          <addptr>1</addptr>
           <description>argo-workflows-direct</description>
         </host>
         <host uuid="14213fd4-7002-4c32-b6a4-4dd7f1db72ce">
@@ -1112,6 +1134,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <ttl/>
           <server>192.168.1.168</server>
           <txtdata/>
+          <addptr>1</addptr>
           <description>registry-ui-direct</description>
         </host>
         <host uuid="7d579c96-52be-40c4-96cc-d435ca440a2c">
@@ -1124,6 +1147,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <ttl/>
           <server>192.168.1.168</server>
           <txtdata/>
+          <addptr>1</addptr>
           <description>speed-direct</description>
         </host>
         <host uuid="41c4a8d7-a57b-459b-b523-1ee6299c6222">
@@ -1136,6 +1160,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <ttl/>
           <server>192.168.1.168</server>
           <txtdata/>
+          <addptr>1</addptr>
           <description>wwdev-direct</description>
         </host>
         <host uuid="25341249-27a3-4a7a-907c-773d8bae9bba">
@@ -1148,6 +1173,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <ttl/>
           <server>192.168.1.168</server>
           <txtdata/>
+          <addptr>1</addptr>
           <description/>
         </host>
         <host uuid="d6bb73c5-b471-4b8a-9126-ad115fa3c35e">
@@ -1160,6 +1186,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <ttl/>
           <server>192.168.1.168</server>
           <txtdata/>
+          <addptr>1</addptr>
           <description>nextcloud-direct</description>
         </host>
         <host uuid="57bbb37c-8048-41e1-b1fd-2b0f81ec0d1a">
@@ -1172,6 +1199,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <ttl/>
           <server>192.168.1.168</server>
           <txtdata/>
+          <addptr>1</addptr>
           <description>mino-direct</description>
         </host>
         <host uuid="50cec6ae-4207-4085-87bb-de3d1ae0c9c0">
@@ -1184,6 +1212,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <ttl/>
           <server>192.168.1.168</server>
           <txtdata/>
+          <addptr>1</addptr>
           <description>git-direct</description>
         </host>
       </hosts>
@@ -1234,7 +1263,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
         <ha_peers/>
       </dhcp6>
     </Kea>
-    <IDS version="1.1.1" persisted_at="1772927811.22" description="Intrusion detection">
+    <IDS version="1.1.2" persisted_at="1772985230.79" description="Intrusion detection">
       <rules/>
       <policies/>
       <userDefinedRules/>
@@ -1499,7 +1528,8 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
       <fileTags/>
       <general>
         <enabled>1</enabled>
-        <ips>1</ips>
+        <mode>netmap</mode>
+        <divert_listeners>1</divert_listeners>
         <promisc>1</promisc>
         <interfaces>wan</interfaces>
         <homenet>192.168.0.0/16,10.0.0.0/8,172.16.0.0/12</homenet>
@@ -1806,6 +1836,17 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
       <neighbors version="1.0.0"/>
       <loopbacks version="1.0.0"/>
       <vxlans version="1.0.2"/>
+      <settings version="1.0.0" persisted_at="1772985231.39" description="Global interface settings">
+        <disablechecksumoffloading>1</disablechecksumoffloading>
+        <disablesegmentationoffloading>1</disablesegmentationoffloading>
+        <disablelargereceiveoffloading>1</disablelargereceiveoffloading>
+        <disablevlanhwfilter>1</disablevlanhwfilter>
+        <disableipv6>0</disableipv6>
+        <dhcp6_norelease>0</dhcp6_norelease>
+        <dhcp6_debug>0</dhcp6_debug>
+        <dhcp6_duid/>
+        <dhcp6_ratimeout>10</dhcp6_ratimeout>
+      </settings>
     </Interfaces>
     <captiveportal version="1.0.4">
       <zones/>
@@ -2033,6 +2074,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
         <interface/>
       </general>
     </Hostwatch>
+    <radvd version="1.0.0" persisted_at="1772985231.68" description="Radvd configuration"/>
   </OPNsense>
   <openvpn/>
   <ifgroups version="1.0.0"/>
