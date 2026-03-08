@@ -748,7 +748,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
   <revision>
     <username>(root)</username>
     <description>/usr/local/opnsense/mvc/script/run_migrations.php made changes</description>
-    <time>1772985829.43</time>
+    <time>1772988134.96</time>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.14" persisted_at="1772985827.56" description="Unbound configuration">
@@ -2075,6 +2075,20 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
       </general>
     </Hostwatch>
     <radvd version="1.0.0" persisted_at="1772985231.68" description="Radvd configuration"/>
+    <tailscale>
+      <settings version="1.0.0" persisted_at="1772988134.95" description="Tailscale general settings">
+        <enabled>0</enabled>
+        <loginTimeout>10</loginTimeout>
+        <listenPort>41641</listenPort>
+        <acceptDNS>1</acceptDNS>
+        <advertiseExitNode>0</advertiseExitNode>
+        <useExitNode/>
+        <acceptSubnetRoutes>0</acceptSubnetRoutes>
+        <enableSSH>0</enableSSH>
+        <disableSNAT>0</disableSNAT>
+        <subnets/>
+      </settings>
+    </tailscale>
   </OPNsense>
   <openvpn/>
   <ifgroups version="1.0.0"/>
