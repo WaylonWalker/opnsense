@@ -437,6 +437,14 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
       <dnsserver/>
       <ntpserver/>
       <staticmap>
+        <mac>02:2f:90:ab:b8:86</mac>
+        <ipaddr>192.168.1.10</ipaddr>
+        <hostname>freezer-cam</hostname>
+        <winsserver/>
+        <dnsserver/>
+        <ntpserver/>
+      </staticmap>
+      <staticmap>
         <mac>a8:a1:59:2b:04:68</mac>
         <ipaddr>192.168.1.100</ipaddr>
         <hostname>razorcrest</hostname>
@@ -747,8 +755,8 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
   </widgets>
   <revision>
     <username>root@192.168.1.100</username>
-    <description>/api/unbound/settings/set_host_override/468b859e-4e8d-4607-ae22-fea142c6eb46 made changes</description>
-    <time>1777742632.23</time>
+    <description>/services_dhcp_edit.php made changes</description>
+    <time>1777819760.35</time>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.14" persisted_at="1777742632.23" description="Unbound configuration">
@@ -2103,7 +2111,9 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
   <vlans version="1.0.0">
     <vlan/>
   </vlans>
-  <virtualip version="1.0.1"/>
+  <virtualip version="1.0.1">
+    <vip/>
+  </virtualip>
   <laggs version="1.0.0">
     <lagg/>
   </laggs>
