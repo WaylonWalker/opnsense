@@ -754,12 +754,12 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
     <column_count>2</column_count>
   </widgets>
   <revision>
-    <username>root@192.168.1.100</username>
-    <description>/services_dhcp_edit.php made changes</description>
-    <time>1777819760.35</time>
+    <username>(root)</username>
+    <description>/usr/local/opnsense/mvc/script/run_migrations.php made changes</description>
+    <time>1778335023.47</time>
   </revision>
   <OPNsense>
-    <unboundplus version="1.0.14" persisted_at="1777742632.23" description="Unbound configuration">
+    <unboundplus version="1.0.15" persisted_at="1778335021.67" description="Unbound configuration">
       <general>
         <enabled>1</enabled>
         <port>53</port>
@@ -787,6 +787,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
         <prefetch/>
         <prefetchkey/>
         <dnssecstripped/>
+        <belownxdomain>1</belownxdomain>
         <aggressivensec>1</aggressivensec>
         <serveexpired/>
         <serveexpiredreplyttl/>
@@ -1270,6 +1271,14 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
         <pd_pools/>
         <ha_peers/>
       </dhcp6>
+      <ddns version="1.0.0" persisted_at="1778335021.67" description="Kea Dynamic DNS configuration">
+        <general>
+          <enabled>0</enabled>
+          <manual_config>0</manual_config>
+          <server_ip>127.0.0.1</server_ip>
+          <server_port>53001</server_port>
+        </general>
+      </ddns>
     </Kea>
     <IDS version="1.1.2" persisted_at="1772985230.79" description="Intrusion detection">
       <rules/>
@@ -1856,7 +1865,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
         <dhcp6_ratimeout>10</dhcp6_ratimeout>
       </settings>
     </Interfaces>
-    <captiveportal version="1.0.4">
+    <captiveportal version="1.0.5" persisted_at="1778335022.79" description="Captive portal application model">
       <zones/>
       <templates/>
     </captiveportal>
@@ -2082,7 +2091,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
         <interface/>
       </general>
     </Hostwatch>
-    <radvd version="1.0.0" persisted_at="1772985231.68" description="Radvd configuration"/>
+    <radvd version="1.0.1" persisted_at="1778335022.79" description="Radvd configuration"/>
     <tailscale>
       <settings version="1.0.0" persisted_at="1772988365.48" description="Tailscale general settings">
         <enabled>1</enabled>
@@ -2182,7 +2191,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
     <password/>
     <syncitems/>
   </hasync>
-  <dnsmasq version="1.0.8" persisted_at="1772927811.38" description="Dnsmasq DNS and DHCP">
+  <dnsmasq version="1.0.9" persisted_at="1778335022.01" description="Dnsmasq DNS and DHCP">
     <enable>0</enable>
     <regdhcp>0</regdhcp>
     <regdhcpstatic>0</regdhcpstatic>
@@ -2214,6 +2223,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
       <default_fw_rules>1</default_fw_rules>
       <reply_delay/>
       <enable_ra>0</enable_ra>
+      <host_ping>1</host_ping>
       <nosync>0</nosync>
       <log_dhcp>0</log_dhcp>
       <log_quiet>0</log_quiet>
