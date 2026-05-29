@@ -754,9 +754,9 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
     <column_count>2</column_count>
   </widgets>
   <revision>
-    <username>(root)</username>
-    <description>/usr/local/opnsense/mvc/script/run_migrations.php made changes</description>
-    <time>1778335023.47</time>
+    <username>root@192.168.1.100</username>
+    <description>/api/firewall/alias/add_item/ made changes</description>
+    <time>1780014944.78</time>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.15" persisted_at="1778335021.67" description="Unbound configuration">
@@ -1639,7 +1639,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
       <StaticKeys/>
     </OpenVPN>
     <Firewall>
-      <Alias version="1.0.1">
+      <Alias version="1.0.1" persisted_at="1780014944.78" description="Firewall aliases">
         <geoip>
           <url/>
         </geoip>
@@ -1648,11 +1648,16 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
             <enabled>0</enabled>
             <name>GOOGLE_HOME_NETWORK</name>
             <type>network</type>
+            <path_expression/>
             <proto/>
             <interface/>
             <counters>0</counters>
             <updatefreq/>
             <content>10.0.0.0/24</content>
+            <password/>
+            <username/>
+            <authtype/>
+            <expire/>
             <categories/>
             <description>Google Home Wifi Network</description>
           </alias>
@@ -1660,13 +1665,35 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
             <enabled>1</enabled>
             <name>test</name>
             <type>host</type>
+            <path_expression/>
             <proto/>
             <interface/>
             <counters/>
             <updatefreq/>
             <content>192.168.1.168</content>
+            <password/>
+            <username/>
+            <authtype/>
+            <expire/>
             <categories/>
             <description>test from python</description>
+          </alias>
+          <alias uuid="c9f8d74f-d592-4952-9755-42e9a65141cb">
+            <enabled>1</enabled>
+            <name>reolink_doorbell</name>
+            <type>host</type>
+            <path_expression/>
+            <proto/>
+            <interface/>
+            <counters>0</counters>
+            <updatefreq/>
+            <content>192.168.1.170</content>
+            <password/>
+            <username/>
+            <authtype/>
+            <expire/>
+            <categories/>
+            <description/>
           </alias>
         </aliases>
       </Alias>
