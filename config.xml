@@ -654,6 +654,27 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
     </rule>
   </nat>
   <filter>
+    <rule uuid="ed0e7109-c3aa-42c5-a19c-199dc842d4e7">
+      <associated-rule-id>nat_67eee15ae668a7.73865797</associated-rule-id>
+      <source>
+        <any>1</any>
+        <port/>
+      </source>
+      <interface>wan</interface>
+      <statetype>keep state</statetype>
+      <ipprotocol>inet</ipprotocol>
+      <destination>
+        <address>192.168.1.50</address>
+        <port/>
+      </destination>
+      <descr>DMZ for Wyatt Switch Lite online stardew share</descr>
+      <category/>
+      <created>
+        <username>root@192.168.1.100</username>
+        <time>1743708506.9438</time>
+        <description>/firewall_nat_edit.php made changes</description>
+      </created>
+    </rule>
     <rule uuid="65efc611-3c98-47d5-961b-17367d0b9a14">
       <type>pass</type>
       <ipprotocol>inet</ipprotocol>
@@ -678,25 +699,28 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
         <any/>
       </destination>
     </rule>
-    <rule>
-      <associated-rule-id>nat_67eee15ae668a7.73865797</associated-rule-id>
-      <source>
-        <any>1</any>
-        <port/>
-      </source>
-      <interface>wan</interface>
-      <statetype>keep state</statetype>
+    <rule uuid="16311ec9-f665-4023-8df0-59227afd3968">
+      <type>block</type>
+      <interface>lan</interface>
       <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <source>
+        <address>reolink_doorbell</address>
+      </source>
       <destination>
-        <address>192.168.1.50</address>
-        <port/>
+        <any>1</any>
       </destination>
-      <descr>DMZ for Wyatt Switch Lite online stardew share</descr>
-      <category/>
+      <updated>
+        <username>root@192.168.1.100</username>
+        <time>1780015180.16</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
       <created>
         <username>root@192.168.1.100</username>
-        <time>1743708506.9438</time>
-        <description>/firewall_nat_edit.php made changes</description>
+        <time>1780015180.16</time>
+        <description>/firewall_rules_edit.php made changes</description>
       </created>
     </rule>
   </filter>
@@ -755,8 +779,8 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
   </widgets>
   <revision>
     <username>root@192.168.1.100</username>
-    <description>/api/firewall/alias/add_item/ made changes</description>
-    <time>1780014944.78</time>
+    <description>/firewall_rules_edit.php made changes</description>
+    <time>1780015180.22</time>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.15" persisted_at="1778335021.67" description="Unbound configuration">
