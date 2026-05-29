@@ -699,30 +699,6 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
         <description>/firewall_rules_edit.php made changes</description>
       </created>
     </rule>
-    <rule uuid="65efc611-3c98-47d5-961b-17367d0b9a14">
-      <type>pass</type>
-      <ipprotocol>inet</ipprotocol>
-      <descr>Default allow LAN to any rule</descr>
-      <interface>lan</interface>
-      <source>
-        <network>lan</network>
-      </source>
-      <destination>
-        <any/>
-      </destination>
-    </rule>
-    <rule uuid="e5f1496f-7261-4cea-807e-81bda4cf292f">
-      <type>pass</type>
-      <ipprotocol>inet6</ipprotocol>
-      <descr>Default allow LAN IPv6 to any rule</descr>
-      <interface>lan</interface>
-      <source>
-        <network>lan</network>
-      </source>
-      <destination>
-        <any/>
-      </destination>
-    </rule>
     <rule uuid="16311ec9-f665-4023-8df0-59227afd3968">
       <type>block</type>
       <interface>lan</interface>
@@ -746,6 +722,30 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
         <time>1780015180.16</time>
         <description>/firewall_rules_edit.php made changes</description>
       </created>
+    </rule>
+    <rule uuid="65efc611-3c98-47d5-961b-17367d0b9a14">
+      <type>pass</type>
+      <ipprotocol>inet</ipprotocol>
+      <descr>Default allow LAN to any rule</descr>
+      <interface>lan</interface>
+      <source>
+        <network>lan</network>
+      </source>
+      <destination>
+        <any/>
+      </destination>
+    </rule>
+    <rule uuid="e5f1496f-7261-4cea-807e-81bda4cf292f">
+      <type>pass</type>
+      <ipprotocol>inet6</ipprotocol>
+      <descr>Default allow LAN IPv6 to any rule</descr>
+      <interface>lan</interface>
+      <source>
+        <network>lan</network>
+      </source>
+      <destination>
+        <any/>
+      </destination>
     </rule>
   </filter>
   <rrd>
@@ -804,7 +804,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
   <revision>
     <username>root@192.168.1.100</username>
     <description>/firewall_rules.php made changes</description>
-    <time>1780015240.31</time>
+    <time>1780015348.31</time>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.15" persisted_at="1778335021.67" description="Unbound configuration">
