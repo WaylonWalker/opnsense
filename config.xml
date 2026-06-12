@@ -803,11 +803,11 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
   </widgets>
   <revision>
     <username>root@192.168.1.100</username>
-    <description>/firewall_rules.php made changes</description>
-    <time>1780015348.31</time>
+    <description>/api/unbound/settings/add_host_override/ made changes</description>
+    <time>1781224386.63</time>
   </revision>
   <OPNsense>
-    <unboundplus version="1.0.15" persisted_at="1778335021.67" description="Unbound configuration">
+    <unboundplus version="1.0.15" persisted_at="1781224386.63" description="Unbound configuration">
       <general>
         <enabled>1</enabled>
         <port>53</port>
@@ -1271,6 +1271,19 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <txtdata/>
           <addptr>1</addptr>
           <description>git-direct</description>
+        </host>
+        <host uuid="a1398d7a-54bb-4102-96a7-568739ecc882">
+          <enabled>1</enabled>
+          <hostname>git</hostname>
+          <domain>wayl.one</domain>
+          <rr>A</rr>
+          <mxprio/>
+          <mx/>
+          <ttl/>
+          <server>192.168.1.168</server>
+          <txtdata/>
+          <addptr>1</addptr>
+          <description>forgejo-direct</description>
         </host>
       </hosts>
       <aliases/>
