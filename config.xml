@@ -804,10 +804,10 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
   <revision>
     <username>root@192.168.1.100</username>
     <description>/api/unbound/settings/set_host_override/a1398d7a-54bb-4102-96a7-568739ecc882 made changes</description>
-    <time>1781224581.19</time>
+    <time>1781224734.62</time>
   </revision>
   <OPNsense>
-    <unboundplus version="1.0.15" persisted_at="1781224581.19" description="Unbound configuration">
+    <unboundplus version="1.0.15" persisted_at="1781224734.62" description="Unbound configuration">
       <general>
         <enabled>1</enabled>
         <port>53</port>
@@ -1280,7 +1280,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <mxprio/>
           <mx/>
           <ttl/>
-          <server>192.168.1.168</server>
+          <server>192.168.1.106</server>
           <txtdata/>
           <addptr>1</addptr>
           <description>forgejo-direct</description>
