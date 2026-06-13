@@ -802,9 +802,9 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
     <column_count>2</column_count>
   </widgets>
   <revision>
-    <username>root@192.168.1.100</username>
-    <description>/api/unbound/settings/addDnsbl/ made changes</description>
-    <time>1781355271.74</time>
+    <username>(root)</username>
+    <description>/usr/local/opnsense/mvc/script/run_migrations.php made changes</description>
+    <time>1781355577.47</time>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.15" persisted_at="1781355271.74" description="Unbound configuration">
@@ -2233,6 +2233,28 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
         <subnets/>
       </settings>
     </tailscale>
+    <AcmeClient version="4.4.0" persisted_at="1781355577.47" description="A secure ACME Client plugin">
+      <settings>
+        <enabled>0</enabled>
+        <autoRenewal>1</autoRenewal>
+        <UpdateCron/>
+        <environment/>
+        <challengePort>43580</challengePort>
+        <TLSchallengePort>43581</TLSchallengePort>
+        <restartTimeout>600</restartTimeout>
+        <haproxyIntegration>0</haproxyIntegration>
+        <haproxyAclRef/>
+        <haproxyActionRef/>
+        <haproxyServerRef/>
+        <haproxyBackendRef/>
+        <logLevel>normal</logLevel>
+        <showIntro>1</showIntro>
+      </settings>
+      <accounts/>
+      <certificates/>
+      <validations/>
+      <actions/>
+    </AcmeClient>
   </OPNsense>
   <openvpn/>
   <ifgroups version="1.0.0"/>
