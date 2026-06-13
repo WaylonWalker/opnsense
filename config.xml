@@ -802,9 +802,9 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
     <column_count>2</column_count>
   </widgets>
   <revision>
-    <username>root@192.168.1.100</username>
-    <description>/api/unbound/settings/set_host_override/a1398d7a-54bb-4102-96a7-568739ecc882 made changes</description>
-    <time>1781224734.62</time>
+    <username>(root)</username>
+    <description>/usr/local/opnsense/mvc/script/run_migrations.php made changes</description>
+    <time>1781354848.20</time>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.15" persisted_at="1781224734.62" description="Unbound configuration">
@@ -1289,15 +1289,27 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
       <aliases/>
     </unboundplus>
     <Kea>
-      <dhcp4 version="1.0.4" persisted_at="1772927374.98">
+      <dhcp4 version="1.0.5" persisted_at="1781354846.46" description="Kea DHCPv4 configuration">
         <general>
           <enabled>0</enabled>
           <manual_config>0</manual_config>
           <interfaces/>
+          <service_sockets_max_retries/>
+          <service_sockets_retry_wait_time/>
           <valid_lifetime>4000</valid_lifetime>
+          <decline_probation_period/>
           <fwrules>1</fwrules>
           <dhcp_socket_type>raw</dhcp_socket_type>
+          <compatibility/>
         </general>
+        <lexpire>
+          <hold_reclaimed_time/>
+          <reclaim_timer_wait_time/>
+          <flush_reclaimed_timer_wait_time/>
+          <max_reclaim_time/>
+          <max_reclaim_leases/>
+          <unwarned_reclaim_cycles/>
+        </lexpire>
         <ha>
           <enabled>0</enabled>
           <this_server_name/>
@@ -1305,6 +1317,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
         </ha>
         <subnets/>
         <reservations/>
+        <options/>
         <ha_peers/>
       </dhcp4>
       <ctrl_agent version="0.0.1">
@@ -1314,14 +1327,26 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <http_port>8000</http_port>
         </general>
       </ctrl_agent>
-      <dhcp6 version="1.0.0">
+      <dhcp6 version="1.0.2" persisted_at="1781354846.52" description="Kea DHCPv6 configuration">
         <general>
           <enabled>0</enabled>
           <manual_config>0</manual_config>
           <interfaces/>
+          <service_sockets_max_retries/>
+          <service_sockets_retry_wait_time/>
           <valid_lifetime>4000</valid_lifetime>
+          <decline_probation_period/>
+          <mac_sources>ipv6-link-local</mac_sources>
           <fwrules>1</fwrules>
         </general>
+        <lexpire>
+          <hold_reclaimed_time/>
+          <reclaim_timer_wait_time/>
+          <flush_reclaimed_timer_wait_time/>
+          <max_reclaim_time/>
+          <max_reclaim_leases/>
+          <unwarned_reclaim_cycles/>
+        </lexpire>
         <ha>
           <enabled>0</enabled>
           <this_server_name/>
@@ -1329,6 +1354,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
         </ha>
         <subnets/>
         <reservations/>
+        <options/>
         <pd_pools/>
         <ha_peers/>
       </dhcp6>
