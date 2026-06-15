@@ -803,11 +803,11 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
   </widgets>
   <revision>
     <username>root@192.168.1.100</username>
-    <description>/api/acmeclient/settings/set made changes</description>
-    <time>1781355672.32</time>
+    <description>/api/unbound/settings/toggle_host_override/a1398d7a-54bb-4102-96a7-568739ecc882 made changes</description>
+    <time>1781565682.21</time>
   </revision>
   <OPNsense>
-    <unboundplus version="1.0.15" persisted_at="1781355271.74" description="Unbound configuration">
+    <unboundplus version="1.0.15" persisted_at="1781565682.21" description="Unbound configuration">
       <general>
         <enabled>1</enabled>
         <port>53</port>
@@ -1286,7 +1286,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <description>git-direct</description>
         </host>
         <host uuid="a1398d7a-54bb-4102-96a7-568739ecc882">
-          <enabled>1</enabled>
+          <enabled>0</enabled>
           <hostname>git</hostname>
           <domain>waylonwalker.com</domain>
           <rr>A</rr>
