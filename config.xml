@@ -803,11 +803,11 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
   </widgets>
   <revision>
     <username>root@192.168.1.100</username>
-    <description>/api/unbound/settings/toggle_host_override/a1398d7a-54bb-4102-96a7-568739ecc882 made changes</description>
-    <time>1781574521.35</time>
+    <description>/api/unbound/settings/setDnsbl/fc377861-ede2-423b-815a-2340b05005d7 made changes</description>
+    <time>1781740863.99</time>
   </revision>
   <OPNsense>
-    <unboundplus version="1.0.15" persisted_at="1781574521.35" description="Unbound configuration">
+    <unboundplus version="1.0.15" persisted_at="1781740863.99" description="Unbound configuration">
       <general>
         <enabled>1</enabled>
         <port>53</port>
@@ -891,7 +891,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <enabled>1</enabled>
           <type>atf,oisd0,oisd2,hgz009,hgz019</type>
           <lists/>
-          <allowlists/>
+          <allowlists>paramountplus.com,cbsi.com,cbsvideo.com,cbsaavideo.com</allowlists>
           <blocklists/>
           <wildcards/>
           <source_nets/>
