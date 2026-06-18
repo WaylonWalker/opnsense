@@ -804,10 +804,10 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
   <revision>
     <username>root@192.168.1.100</username>
     <description>/api/unbound/settings/setDnsbl/fc377861-ede2-423b-815a-2340b05005d7 made changes</description>
-    <time>1781740863.99</time>
+    <time>1781787935.12</time>
   </revision>
   <OPNsense>
-    <unboundplus version="1.0.15" persisted_at="1781740863.99" description="Unbound configuration">
+    <unboundplus version="1.0.15" persisted_at="1781787935.12" description="Unbound configuration">
       <general>
         <enabled>1</enabled>
         <port>53</port>
@@ -891,7 +891,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <enabled>1</enabled>
           <type>atf,oisd0,oisd2,hgz009,hgz019</type>
           <lists/>
-          <allowlists>paramountplus.com,cbsi.com,cbsvideo.com,cbsaavideo.com</allowlists>
+          <allowlists>paramountplus.com,cbsi.com,cbsvideo.com,cbsaavideo.com,conviva.com</allowlists>
           <blocklists/>
           <wildcards/>
           <source_nets/>
