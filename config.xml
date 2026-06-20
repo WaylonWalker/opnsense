@@ -698,6 +698,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
         <time>1780015220.10</time>
         <description>/firewall_rules_edit.php made changes</description>
       </created>
+      <disabled>1</disabled>
     </rule>
     <rule uuid="16311ec9-f665-4023-8df0-59227afd3968">
       <type>block</type>
@@ -722,6 +723,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
         <time>1780015180.16</time>
         <description>/firewall_rules_edit.php made changes</description>
       </created>
+      <disabled>1</disabled>
     </rule>
     <rule uuid="65efc611-3c98-47d5-961b-17367d0b9a14">
       <type>pass</type>
@@ -803,8 +805,8 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
   </widgets>
   <revision>
     <username>root@192.168.1.100</username>
-    <description>/api/unbound/settings/setDnsbl/fc377861-ede2-423b-815a-2340b05005d7 made changes</description>
-    <time>1781790038.53</time>
+    <description>/firewall_rules.php made changes</description>
+    <time>1781979841.14</time>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.15" persisted_at="1781790038.53" description="Unbound configuration">
