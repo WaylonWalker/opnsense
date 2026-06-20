@@ -829,8 +829,8 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
   </widgets>
   <revision>
     <username>root@192.168.1.100</username>
-    <description>/firewall_rules.php made changes</description>
-    <time>1781985946.97</time>
+    <description>/api/firewall/alias/toggle_item/c9f8d74f-d592-4952-9755-42e9a65141cb made changes</description>
+    <time>1781986075.63</time>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.15" persisted_at="1781981845.01" description="Unbound configuration">
@@ -1765,7 +1765,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
       <StaticKeys/>
     </OpenVPN>
     <Firewall>
-      <Alias version="1.0.1" persisted_at="1780014944.78" description="Firewall aliases">
+      <Alias version="1.0.1" persisted_at="1781986075.63" description="Firewall aliases">
         <geoip>
           <url/>
         </geoip>
@@ -1805,7 +1805,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
             <description>test from python</description>
           </alias>
           <alias uuid="c9f8d74f-d592-4952-9755-42e9a65141cb">
-            <enabled>1</enabled>
+            <enabled>0</enabled>
             <name>reolink_doorbell</name>
             <type>host</type>
             <path_expression/>
