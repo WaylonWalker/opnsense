@@ -805,11 +805,11 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
   </widgets>
   <revision>
     <username>root@192.168.1.100</username>
-    <description>/api/unbound/settings/toggleDnsbl/d39657ba-4f8c-4e71-8732-e29de7519c25 made changes</description>
-    <time>1781981703.91</time>
+    <description>/api/unbound/settings/toggleDnsbl/fc377861-ede2-423b-815a-2340b05005d7 made changes</description>
+    <time>1781981844.01</time>
   </revision>
   <OPNsense>
-    <unboundplus version="1.0.15" persisted_at="1781981703.91" description="Unbound configuration">
+    <unboundplus version="1.0.15" persisted_at="1781981844.01" description="Unbound configuration">
       <general>
         <enabled>1</enabled>
         <port>53</port>
@@ -890,7 +890,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <description>default</description>
         </blocklist>
         <blocklist uuid="fc377861-ede2-423b-815a-2340b05005d7">
-          <enabled>1</enabled>
+          <enabled>0</enabled>
           <type>atf,oisd0,oisd2,hgz009,hgz019</type>
           <lists/>
           <allowlists>paramountplus.com,cbsi.com,cbsvideo.com,cbsaavideo.com,brightline.tv,87a6b28bc7823e67a5bb2a0a6728c702afcae78d.cws.conviva.com,ipv4.cws.conviva.com, ipv6.cws.conviva.com, 87a6b28bc7823e67a5bb2a0a6728c702afcae78d.ipv4.cws.conviva.com, 87a6b28bc7823e67a5bb2a0a6728c702afcae78d.ipv6.cws.conviva.com, brightline.tv, cdn-media.brightline.tv, events.brightline.tv,pubads.g.doubleclick.net, pagead2.googlesyndication.com, googleads.g.doubleclick.net</allowlists>
