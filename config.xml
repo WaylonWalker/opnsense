@@ -828,9 +828,9 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
     <column_count>2</column_count>
   </widgets>
   <revision>
-    <username>root@192.168.1.100</username>
-    <description>/api/firewall/alias/set made changes</description>
-    <time>1781986322.93</time>
+    <username>(root)</username>
+    <description>/usr/local/opnsense/mvc/script/run_migrations.php made changes</description>
+    <time>1783284395.76</time>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.15" persisted_at="1781981845.01" description="Unbound configuration">
@@ -1826,7 +1826,8 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
       <Category version="1.0.0">
         <categories/>
       </Category>
-      <Filter version="1.0.4">
+      <Filter version="1.0.5" persisted_at="1783284394.45" description="Firewall rules (new)">
+        <general/>
         <rules/>
         <snatrules/>
         <npt/>
@@ -2284,12 +2285,12 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
   </OPNsense>
   <openvpn/>
   <ifgroups version="1.0.0"/>
-  <staticroutes version="1.0.0">
+  <staticroutes version="1.0.1" persisted_at="1783284394.53" description="Static routes">
     <route uuid="eccf8549-3307-4684-8133-841dee7c8c3e">
       <network>10.0.0.0/24</network>
       <gateway>GOOGLE_HOME_GW</gateway>
       <descr>Google Home Wifi Gateway</descr>
-      <disabled>0</disabled>
+      <enabled>1</enabled>
     </route>
   </staticroutes>
   <vlans version="1.0.0">
