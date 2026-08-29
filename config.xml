@@ -827,7 +827,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
   <revision>
     <username>(root)</username>
     <description>/usr/local/opnsense/mvc/script/run_migrations.php made changes</description>
-    <time>1788016951.92</time>
+    <time>1788017374.42</time>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.15" persisted_at="1781981845.01" description="Unbound configuration">
@@ -1325,7 +1325,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
       <aliases/>
     </unboundplus>
     <Kea>
-      <dhcp4 version="1.0.5" persisted_at="1781354846.46" description="Kea DHCPv4 configuration">
+      <dhcp4 version="1.0.6" persisted_at="1788017371.75" description="Kea DHCPv4 configuration">
         <general>
           <enabled>0</enabled>
           <manual_config>0</manual_config>
@@ -1363,7 +1363,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
           <http_port>8000</http_port>
         </general>
       </ctrl_agent>
-      <dhcp6 version="1.0.2" persisted_at="1781354846.52" description="Kea DHCPv6 configuration">
+      <dhcp6 version="1.0.3" persisted_at="1788017371.70" description="Kea DHCPv6 configuration">
         <general>
           <enabled>0</enabled>
           <manual_config>0</manual_config>
@@ -1823,7 +1823,7 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
       <Category version="1.0.0">
         <categories/>
       </Category>
-      <Filter version="1.0.5" persisted_at="1783284394.45" description="Firewall rules (new)">
+      <Filter version="1.0.6" persisted_at="1788017372.24" description="Firewall rules (new)">
         <general/>
         <rules/>
         <snatrules/>
