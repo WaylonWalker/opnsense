@@ -554,6 +554,16 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
         <ntpserver/>
       </staticmap>
       <staticmap>
+        <mac>ec:71:db:79:16:6f</mac>
+        <cid>reolink front doorbell</cid>
+        <ipaddr>192.168.1.169</ipaddr>
+        <hostname>reolinkfrontdoorbell</hostname>
+        <descr>Reolink Front Door Bell</descr>
+        <winsserver/>
+        <dnsserver/>
+        <ntpserver/>
+      </staticmap>
+      <staticmap>
         <mac>52:54:00:10:56:ec</mac>
         <ipaddr>192.168.1.170</ipaddr>
         <hostname>lb-p1</hostname>
@@ -825,9 +835,9 @@ AAAEAvlL9FtOFhRh91VV3/8ni0M8knsYAcBtjgBF5zeuj/0bRTPGBZbDZSjeqmmbGTrnZa&#13;
     <column_count>2</column_count>
   </widgets>
   <revision>
-    <username>(root)</username>
-    <description>/usr/local/opnsense/mvc/script/run_migrations.php made changes</description>
-    <time>1788017374.42</time>
+    <username>root@192.168.1.100</username>
+    <description>/services_dhcp_edit.php made changes</description>
+    <time>1789228062.26</time>
   </revision>
   <OPNsense>
     <unboundplus version="1.0.15" persisted_at="1781981845.01" description="Unbound configuration">
